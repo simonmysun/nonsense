@@ -33,6 +33,12 @@ var apostate = function(text) {
         return text[i + k] === x[k];
       });
     };
+    if (r.length == 0) {
+      k -= 1;
+      r = r.filter(function(x) {
+        return x === text.slice(i, k);
+      }
+    }
     i += r[0].length - 1;
     res.push(char[dict.indexOf(r[0])]);
   }
