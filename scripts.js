@@ -37,7 +37,7 @@ var apostate = function(text) {
       k -= 1;
       r = r.filter(function(x) {
         return x === text.slice(i, k);
-      }
+      });
     }
     i += r[0].length - 1;
     res.push(char[dict.indexOf(r[0])]);
