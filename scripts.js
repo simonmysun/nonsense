@@ -34,9 +34,8 @@ var apostate = function(text) {
       });
     };
     if (r.length == 0) {
-      k -= 1;
       r = dict.filter(function(x) {
-        return x === text.slice(i, k);
+        return x === text.slice(i, i + k);
       });
     }
     i += r[0].length - 1;
