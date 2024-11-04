@@ -35,7 +35,7 @@ var apostate = function(text) {
     };
     if (r.length == 0) {
       k -= 1;
-      r = r.filter(function(x) {
+      r = dict.filter(function(x) {
         return x === text.slice(i, k);
       });
     }
